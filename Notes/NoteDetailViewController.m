@@ -29,6 +29,13 @@
     self.displayedNote.content = self.contentTextView.text;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.titleTextField.text = self.displayedNote.title;
+    self.contentTextView.text = self.displayedNote.content;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -72,6 +72,9 @@
         [self.notes addObject:newNote];
         NoteDetailViewController *noteDetailViewController = (NoteDetailViewController *) segue.destinationViewController;
         noteDetailViewController.displayedNote = newNote;
+    } else if ([segue.identifier isEqualToString:@"ViewNote"]) {
+        NoteDetailViewController *noteDetailViewController = (NoteDetailViewController *) segue.destinationViewController;
+        noteDetailViewController.displayedNote = self.notes[[[self.tableView indexPathForSelectedRow] row]];
     }
 }
 

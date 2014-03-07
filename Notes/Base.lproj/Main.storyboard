@@ -30,7 +30,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BDU-hd-c78" kind="push" identifier="viewNote" id="Ktq-sB-SDq"/>
+                                    <segue destination="BDU-hd-c78" kind="push" identifier="ViewNote" id="Ktq-sB-SDq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,6 +117,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Xq6-dS-fqr"/>
+        <segue reference="Ktq-sB-SDq"/>
     </inferredMetricsTieBreakers>
 </document>
