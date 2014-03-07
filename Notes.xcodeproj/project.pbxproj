@@ -22,6 +22,8 @@
 		62C491BC18CA2C3E0067C44D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62C491BA18CA2C3E0067C44D /* InfoPlist.strings */; };
 		62C491BE18CA2C3E0067C44D /* NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C491BD18CA2C3E0067C44D /* NotesTests.m */; };
 		62C491C918CA2E630067C44D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C491C818CA2E630067C44D /* NotesViewController.m */; };
+		62C491CC18CA36530067C44D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C491CB18CA36530067C44D /* Note.m */; };
+		62C491CF18CA38BC0067C44D /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C491CE18CA38BC0067C44D /* NoteDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		62C491BD18CA2C3E0067C44D /* NotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTests.m; sourceTree = "<group>"; };
 		62C491C718CA2E630067C44D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesViewController.h; path = Notes/NotesViewController.h; sourceTree = "<group>"; };
 		62C491C818CA2E630067C44D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesViewController.m; path = Notes/NotesViewController.m; sourceTree = "<group>"; };
+		62C491CA18CA36530067C44D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = SOURCE_ROOT; };
+		62C491CB18CA36530067C44D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = SOURCE_ROOT; };
+		62C491CD18CA38BC0067C44D /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDetailViewController.h; path = Notes/NoteDetailViewController.h; sourceTree = "<group>"; };
+		62C491CE18CA38BC0067C44D /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDetailViewController.m; path = Notes/NoteDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 		62C4918618CA2C3E0067C44D = {
 			isa = PBXGroup;
 			children = (
+				62C491CD18CA38BC0067C44D /* NoteDetailViewController.h */,
+				62C491CE18CA38BC0067C44D /* NoteDetailViewController.m */,
 				62C491C718CA2E630067C44D /* NotesViewController.h */,
 				62C491C818CA2E630067C44D /* NotesViewController.m */,
 				62C4919818CA2C3E0067C44D /* Notes */,
@@ -124,6 +132,8 @@
 				62C491A818CA2C3E0067C44D /* ViewController.m */,
 				62C491AA18CA2C3E0067C44D /* Images.xcassets */,
 				62C4919918CA2C3E0067C44D /* Supporting Files */,
+				62C491CA18CA36530067C44D /* Note.h */,
+				62C491CB18CA36530067C44D /* Note.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -254,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C491CC18CA36530067C44D /* Note.m in Sources */,
 				62C491C918CA2E630067C44D /* NotesViewController.m in Sources */,
 				62C491A918CA2C3E0067C44D /* ViewController.m in Sources */,
 				62C491A318CA2C3E0067C44D /* AppDelegate.m in Sources */,
 				62C4919F18CA2C3E0067C44D /* main.m in Sources */,
+				62C491CF18CA38BC0067C44D /* NoteDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
