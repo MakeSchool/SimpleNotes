@@ -41,8 +41,8 @@
     self.notes = [NSMutableArray array];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
     [self.tableView reloadData];
 }
@@ -76,6 +76,22 @@
         NoteDetailViewController *noteDetailViewController = (NoteDetailViewController *) segue.destinationViewController;
         noteDetailViewController.displayedNote = self.notes[[[self.tableView indexPathForSelectedRow] row]];
     }
+}
+
+#pragma mark - Cell Deletion
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return YES - we will be able to delete all rows
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Perform the real delete action here. Note: you may need to check editing style
+    //   if you do not perform delete only.
+    [self.notes removeObjectAtIndex:indexPath.row];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table view data source

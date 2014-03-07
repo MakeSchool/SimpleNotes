@@ -56,16 +56,22 @@
             <objects>
                 <viewController id="BDU-hd-c78" customClass="NoteDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vMt-On-UDd"/>
-                        <viewControllerLayoutGuide type="bottom" id="H0O-BX-ggT"/>
+                        <viewControllerLayoutGuide type="top" id="tHd-FO-rKf"/>
+                        <viewControllerLayoutGuide type="bottom" id="XJE-5H-XoT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mys-gK-GIK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rwI-NL-eKy">
-                                <rect key="frame" x="0.0" y="63" width="320" height="417"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgG-7H-3qz">
+                                <rect key="frame" x="7" y="71" width="305" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5co-SA-4nP">
+                                <rect key="frame" x="7" y="109" width="305" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -76,15 +82,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="dtI-bJ-SKh">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgG-7H-3qz">
-                            <rect key="frame" x="73" y="7" width="175" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                     </navigationItem>
                     <connections>
-                        <outlet property="contentTextView" destination="rwI-NL-eKy" id="KCf-z9-HjB"/>
+                        <outlet property="contentTextView" destination="5co-SA-4nP" id="Oya-jX-MeA"/>
                         <outlet property="titleTextField" destination="xgG-7H-3qz" id="Pel-4d-8xn"/>
                     </connections>
                 </viewController>
